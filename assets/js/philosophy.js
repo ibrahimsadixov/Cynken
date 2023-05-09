@@ -13,6 +13,8 @@ const firebaseConfig = {
 
 
   const dbRef = firebase.database().ref("Cynken");
+  let toggledCard = null; 
+
   
   dbRef.once("value", function(snapshot) {
       const data = snapshot.val();
@@ -31,6 +33,14 @@ const firebaseConfig = {
                   card.appendChild(h2);
                   card.appendChild(p);
                   container.appendChild(card);
+                    
+                  card.addEventListener("click", () => {
+                    if (toggledCard !== null && toggledCard !== card) {
+                      toggledCard.classList.remove("open");
+                    }
+                    card.classList.toggle("open");
+                    toggledCard = card;
+                  });
               }
           }
       }
