@@ -1,0 +1,35 @@
+#menu{
+    height: 0;
+    width: 100%;
+    background-color: #222;
+    transition: .3s;
+    overflow: hidden;
+    position: fixed;
+}
+.openMenu{
+    height: 200px !important;
+    transition: .3s;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+}
+
+ #menu ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#menu ul li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}

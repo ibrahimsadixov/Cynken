@@ -1,0 +1,45 @@
+.card{
+    width: 80%;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .3s;
+}
+.card p{
+   font-weight: 200;
+   font-size: 1.2rem;
+}
+.card h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+ }
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.open{
+    width: 90%;
+    min-height: 80vh;
+    transition: .3s;
+}
+.open p{
+    font-size: 1.5rem !important;
+}
+.card p{
+    margin-bottom: 30px;
+    overflow: hidden;
+  
+}
+.open h2{
+    font-size: 3rem;
+}
